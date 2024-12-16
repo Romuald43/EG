@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce - Produits du Quotidien</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>E-Shop Produits du Quotidien</h1>
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#products">Produits</a>
+      <a href="#cart">Panier</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section des produits -->
+    <section id="products">
+      <h2>Nos Produits</h2>
+      <div class="product-list">
+        <div class="product" data-id="1" data-price="15">
+          <h3>Brosse à dents</h3>
+          <p>Prix : 15€</p>
+          <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="product" data-id="2" data-price="5">
+          <h3>Savon</h3>
+          <p>Prix : 5€</p>
+          <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="product" data-id="3" data-price="20">
+          <h3>Gourde</h3>
+          <p>Prix : 20€</p>
+          <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section du panier -->
+    <section id="cart">
+      <h2>Panier</h2>
+      <ul id="cart-items">
+        <!-- Les articles ajoutés apparaîtront ici -->
+      </ul>
+      <p id="total">Total : 0€</p>
+      <button id="checkout">Passer à la caisse</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
